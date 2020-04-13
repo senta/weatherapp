@@ -63,7 +63,8 @@ I used Pipenv, a dependency management tool, for backend implementation. And I a
 
 ### with Docker
 
-1. Copy `.env` file onto the project root directory
+0. Move to backend project directory `cd apiserver`.
+1. Copy `.env` file onto the backend root directory
    - The file includes the API key so that I will share the file separately.
 2. Build the docker image `docker build -t weather-as-a-service .`
 3. Run `docker run -p 5000:5000 --env-file .env weather-as-a-service`
@@ -71,6 +72,7 @@ I used Pipenv, a dependency management tool, for backend implementation. And I a
 
 ### with Pipenv
 
+0. Move to backend project directory `cd apiserver`.
 1. Copy `.env` file onto the project root directory
    - The file includes the API key so that I will share the file separately.
 2. RUn `pipenv install --dev` to install dependencies.
